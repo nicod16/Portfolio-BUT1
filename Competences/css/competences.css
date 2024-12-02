@@ -1,0 +1,130 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #007acc;
+    color: white;
+    padding: 2rem;
+    border-bottom: 4px solid #005a9e;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Image and Text Slider */
+.image-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    background-color: #252526;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.image-slider img.active {
+    opacity: 1;
+}
+
+.text-slider {
+    text-align: center;
+}
+
+.text-slider p {
+    display: none;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.text-slider p.active {
+    display: block;
+}
+
+/* Table Styles */
+.table-container {
+    margin: 2rem auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.table-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #61dafb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #252526;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007acc;
+    color: white;
+    border-top: 4px solid #005a9e;
+}
