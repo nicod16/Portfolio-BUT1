@@ -1,0 +1,202 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    line-height: 1.6;
+    padding: 0 2rem;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 3px solid #005a9e;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #005a9e;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: #61dafb;
+}
+
+/* Présentation Section */
+section.présentation {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #252526;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.présentation .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #61dafb;
+}
+
+.présentation .bio p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Parcours Section */
+section.parcours {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #252526;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.parcours h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #61dafb;
+}
+
+.parcours table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.parcours table th,
+.parcours table td {
+    border: 1px solid #444;
+    text-align: center;
+    padding: 1rem;
+}
+
+.parcours table th {
+    background-color: #333;
+    color: #61dafb;
+    font-size: 1.2rem;
+}
+
+.parcours table td {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+}
+
+.parcours table td img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid #61dafb;
+}
+
+/* Sections des compétences */
+.competences {
+    background-color: #252526;
+    color: #d4d4d4;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #61dafb; /* Accent visuel */
+}
+
+.competences h2 {
+    font-size: 2rem;
+    color: #61dafb;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.competences p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #d4d4d4;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.competences ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.competences ul li {
+    background-color: #333;
+    color: #d4d4d4;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 0.8rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.competences ul li:hover {
+    transform: translateX(10px); /* Animation au survol */
+    background-color: #444;
+}
+
+.competences ul li::before {
+    content: '✓'; /* Icône avant chaque élément */
+    color: #61dafb;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Mise en valeur des sections spécifiques */
+#competence1 {
+    border-left: 5px solid #007acc;
+}
+
+#competence2 {
+    border-left: 5px solid #28a745;
+}
+
+#competence3 {
+    border-left: 5px solid #ff5722;
+}
+
+#competence4 {
+    border-left: 5px solid #6c757d;
+}
+
+#competence5 {
+    border-left: 5px solid #ffc107;
+}
+
+#competence6 {
+    border-left: 5px solid #17a2b8;
+}
