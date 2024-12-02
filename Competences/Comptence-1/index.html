@@ -3,63 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation de Mes Compétences</title>
+    <title>Mes Compétences</title>
     <link rel="stylesheet" href="../css/competences.css">
 </head>
 <body>
     <header>
-        <h1>Mes Compétences</h1>
-        <p>Découvrez mes projets et réalisations avec images et descriptions !</p>
+        <h1>Mes Compétences et Réalisations</h1>
+        <p>Explorez mes projets grâce à ces cadres interactifs.</p>
     </header>
 
-    <section class="image-text-container">
+    <section class="frames-container">
+        <!-- Cadre 1 -->
         <div class="frame">
             <div class="image-slider">
-                <img src="../../img/data.jpg" alt="Projet 1">
-                <img src="../../img/data.jpg" alt="Projet 2">
-                <img src="image3.jpg" alt="Projet 3">
+                <button class="arrow prev">&lt;</button>
+                <div class="images">
+                    <img src="image1.jpg" alt="Projet 1">
+                    <img src="image2.jpg" alt="Projet 2">
+                    <img src="image3.jpg" alt="Projet 3">
+                </div>
+                <button class="arrow next">&gt;</button>
             </div>
             <div class="text-slider">
-                <p>Description du Projet 1 : Développement web en HTML, CSS, JavaScript.</p>
-                <p>Description du Projet 2 : Application Java pour gestion de tâches.</p>
-                <p>Description du Projet 3 : Création d’une base de données en PHP/MySQL.</p>
+                <p>Description du Projet 1 : Conception de sites web modernes.</p>
+                <p>Description du Projet 2 : Application Java pour tâches.</p>
+                <p>Description du Projet 3 : Base de données en PHP/MySQL.</p>
             </div>
         </div>
-    </section>
 
-    <section class="table-container">
-        <h2>Mes Outils et Compétences</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Compétence</th>
-                    <th>Niveau</th>
-                    <th>Années d'expérience</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>HTML/CSS</td>
-                    <td>Avancé</td>
-                    <td>3 ans</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>Intermédiaire</td>
-                    <td>2 ans</td>
-                </tr>
-                <tr>
-                    <td>PHP/MySQL</td>
-                    <td>Intermédiaire</td>
-                    <td>2 ans</td>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>Débutant</td>
-                    <td>1 an</td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- Cadre 2 -->
+        <div class="frame">
+            <div class="image-slider">
+                <button class="arrow prev">&lt;</button>
+                <div class="images">
+                    <img src="image4.jpg" alt="Projet 4">
+                    <img src="image5.jpg" alt="Projet 5">
+                    <img src="image6.jpg" alt="Projet 6">
+                </div>
+                <button class="arrow next">&gt;</button>
+            </div>
+            <div class="text-slider">
+                <p>Description du Projet 4 : Création d'un jeu 2D en JavaScript.</p>
+                <p>Description du Projet 5 : Intégration d'API pour des données dynamiques.</p>
+                <p>Description du Projet 6 : Développement de scripts automatisés.</p>
+            </div>
+        </div>
+
+        <!-- Cadre 3 -->
+        <div class="frame">
+            <div class="image-slider">
+                <button class="arrow prev">&lt;</button>
+                <div class="images">
+                    <img src="image7.jpg" alt="Projet 7">
+                    <img src="image8.jpg" alt="Projet 8">
+                    <img src="image9.jpg" alt="Projet 9">
+                </div>
+                <button class="arrow next">&gt;</button>
+            </div>
+            <div class="text-slider">
+                <p>Description du Projet 7 : Système de gestion scolaire en PHP.</p>
+                <p>Description du Projet 8 : Optimisation de performances en CSS.</p>
+                <p>Description du Projet 9 : Création d'un portfolio interactif.</p>
+            </div>
+        </div>
     </section>
 
     <footer>

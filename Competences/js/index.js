@@ -1,24 +1,38 @@
-// Gestion du slider d'images et de texte
-let currentSlide = 0;
+document.addEventListener('DOMContentLoaded', () => {
+    const frames = document.querySelectorAll('.frame');
 
-const images = document.querySelectorAll('.image-slider img');
-const texts = document.querySelectorAll('.text-slider p');
+    frames.forEach(frame => {
+        const imagesContainer = frame.querySelector('.image-slider .images');
+        const images = frame.querySelectorAll('.image-slider img');
+        const texts = frame.querySelectorAll('.text-slider p');
+        const prevButton = frame.querySelector('.arrow.prev');
+        const nextButton = frame.querySelector('.arrow.next');
+        let currentIndex = 0;
 
-function changeSlide() {
-    // Réinitialiser les classes actives
-    images.forEach((img, index) => img.classList.remove('active'));
-    texts.forEach((text, index) => text.classList.remove('active'));
+        // Mettre à jour le slider
+        function updateSlider() {
+            // Changer la position des images
+            imagesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-    // Activer le slide actuel
-    images[currentSlide].classList.add('active');
-    texts[currentSlide].classList.add('active');
+            // Mettre à jour le texte
+            texts.forEach((text, index) => {
+                text.classList.toggle('active', index === currentIndex);
+            });
+        }
 
-    // Passer au prochain slide
-    currentSlide = (currentSlide + 1) % images.length;
-}
+        // Bouton précédent
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateSlider();
+        });
 
-// Démarrer le slider (toutes les 3 secondes)
-setInterval(changeSlide, 3000);
+        // Bouton suivant
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateSlider();
+        });
 
-// Initialiser le premier slide
-changeSlide();
+        // Initialisation
+        updateSlider();
+    });
+});
